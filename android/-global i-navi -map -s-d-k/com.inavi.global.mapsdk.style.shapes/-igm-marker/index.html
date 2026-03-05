@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>IgmMarker</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            Global iNavi Map SDK
+                    </a>
+            </div>
+            <div class="library-version">
+1.0.0            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":MapSDK:dokkaHtml/release">androidJvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="Global iNavi Map SDK::com.inavi.global.mapsdk.style.shapes/IgmMarker///PointingToDeclaration//1511875792">
+  <div class="breadcrumbs"><a href="../../../index.html">Global iNavi Map SDK</a><span class="delimiter">/</span><a href="../index.html">com.inavi.global.mapsdk.style.shapes</a><span class="delimiter">/</span><span class="current">IgmMarker</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Igm</span><wbr></wbr><span><span>Marker</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":MapSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">IgmMarker</a> <span><span class="token annotation builtin">@</span><span data-unresolved-link="kotlin.jvm/JvmOverloads///PointingToDeclaration/"><span class="token annotation builtin">JvmOverloads</span></span> </span><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">position<span class="token operator">: </span><a href="../../com.inavi.global.mapsdk.geometry/-lat-lng/index.html">LatLng</a><span class="token punctuation">, </span></span><span class="parameter ">iconImage<span class="token operator">: </span><a href="../-igm-image/index.html">IgmImage</a><span class="token operator">?</span><span class="token operator"> = </span>DEFAULT_ICON</span></span><span class="token punctuation">)</span> : <a href="../-igm-shape/index.html">IgmShape</a>, <a href="../-igm-marker-options/index.html">IgmMarkerOptions</a></div><p class="paragraph">Shape class that renders a point on the map using an icon and title.</p><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":MapSDK:dokkaHtml/release" data-filterable-set=":MapSDK:dokkaHtml/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>position</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Marker position</p></div></div></div></div><div class="table-row" data-filterable-current=":MapSDK:dokkaHtml/release" data-filterable-set=":MapSDK:dokkaHtml/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>icon</span><wbr></wbr><span><span>Image</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Icon image</p></div></div></div></div></div><h4 class="">Throws</h4><div class="table"><div class="table-row" data-filterable-current=":MapSDK:dokkaHtml/release" data-filterable-set=":MapSDK:dokkaHtml/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../../com.inavi.global.mapsdk.exceptions/-invalid-lat-lng-exception/index.html"><span>Invalid</span><wbr></wbr><span>Lat</span><wbr></wbr><span>Lng</span><wbr></wbr><span><span>Exception</span></span></a></div></span></div><div><div class="title"><p class="paragraph">Thrown when the position is invalid.</p></div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="1805391090%2FConstructors%2F1511875792" anchor-label="IgmMarker" id="1805391090%2FConstructors%2F1511875792" data-filterable-set=":MapSDK:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":MapSDK:dokkaHtml/release" data-filterable-set=":MapSDK:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-igm-marker.html"><span>Igm</span><wbr></wbr><span><span>Marker</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1805391090%2FConstructors%2F1511875792"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":MapSDK:dokkaHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="kotlin.jvm/JvmOverloads///PointingToDeclaration/"><span class="token annotation builtin">JvmOverloads</span></span></div></div><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">position<span class="token operator">: </span><a href="../../com.inavi.global.mapsdk.geometry/-lat-lng/index.html">LatLng</a><span class="token punctuation">, </span></span><span class="parameter ">iconImage<span class="token operator">: </span><a href="../-igm-image/index.html">IgmImage</a><span class="token operator">?</span><span class="token operator"> = </span>DEFAULT_ICON</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="-627619239%2FClasslikes%2F1511875792" anchor-label="Companion" id="-627619239%2FClasslikes%2F1511875792" data-filterable-set=":MapSDK:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":MapSDK:dokkaHtml/release" data-filterable-set=":MapSDK:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-companion/index.html"><span><span>Companion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-627619239%2FClasslikes%2F1511875792"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":MapSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="-companion/index.html">Companion</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="525236823%2FProperties%2F1511875792" anchor-label="allowOverlapMarkers" id="525236823%2FProperties%2F1511875792" data-filterable-set=":MapSDK:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":MapSDK:dokkaHtml/release" data-filterable-set=":MapSDK:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="allow-overlap-markers.html"><span>allow</span><wbr></wbr><span>Overlap</span><wbr></wbr><span><span>Markers</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="525236823%2FProperties%2F1511875792"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":MapSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="allow-overlap-markers.html">allowOverlapMarkers</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></div><div class="brief "><p class="paragraph">Gets or sets whether overlap with other markers is allowed. The default value is <code class="lang-kotlin">true</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-547864011%2FProperties%2F1511875792" anchor-label="allowOverlapSymbols" id="-547864011%2FProperties%2F1511875792" data-filterable-set=":MapSDK:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":MapSDK:dokkaHtml/release" data-filterable-set=":MapSDK:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="allow-overlap-symbols.html"><span>allow</span><wbr></wbr><span>Overlap</span><wbr></wbr><span><span>Symbols</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-547864011%2FProperties%2F1511875792"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":MapSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="allow-overlap-symbols.html">allowOverlapSymbols</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></div><div class="brief "><p class="paragraph">Gets or sets whether overlap with map symbols is allowed. The default value is <code class="lang-kotlin">true</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-597895912%2FProperties%2F1511875792" anchor-label="allowOverlapTitle" id="-597895912%2FProperties%2F1511875792" data-filterable-set=":MapSDK:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":MapSDK:dokkaHtml/release" data-filterable-set=":MapSDK:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="allow-overlap-title.html"><span>allow</span><wbr></wbr><span>Overlap</span><wbr></wbr><span><span>Title</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-597895912%2FProperties%2F1511875792"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":MapSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="allow-overlap-title.html">allowOverlapTitle</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></div><div class="brief "><p class="paragraph">Gets or sets whether overlap with other marker titles is allowed. The default value is <code class="lang-kotlin">true</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="452485108%2FProperties%2F1511875792" anchor-label="alpha" id="452485108%2FProperties%2F1511875792" data-filterable-set=":MapSDK:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":MapSDK:dokkaHtml/release" data-filterable-set=":MapSDK:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="alpha.html"><span><span>alpha</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="452485108%2FProperties%2F1511875792"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":MapSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="alpha.html">alpha</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Float///PointingToDeclaration/">Float</span></div><div class="brief "><p class="paragraph">Gets or sets marker opacity. <code class="lang-kotlin">0</code> is fully transparent and <code class="lang-kotlin">1</code> is fully opaque.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1437656717%2FProperties%2F1511875792" anchor-label="anchor" id="-1437656717%2FProperties%2F1511875792" data-filterable-set=":MapSDK:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":MapSDK:dokkaHtml/release" data-filterable-set=":MapSDK:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="anchor.html"><span><span>anchor</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1437656717%2FProperties%2F1511875792"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":MapSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="anchor.html">anchor</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/PointF.html">PointF</a></div><div class="brief "><p class="paragraph">Gets or sets marker icon anchor.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-488081889%2FProperties%2F1511875792" anchor-label="angle" id="-488081889%2FProperties%2F1511875792" data-filterable-set=":MapSDK:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":MapSDK:dokkaHtml/release" data-filterable-set=":MapSDK:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="angle.html"><span><span>angle</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-488081889%2FProperties%2F1511875792"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":MapSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="angle.html">angle</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Float///PointingToDeclaration/">Float</span></div><div class="brief "><p class="paragraph">Gets or sets marker icon angle in degrees.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-380507408%2FProperties%2F1511875792" anchor-label="iconImage" id="-380507408%2FProperties%2F1511875792" data-filterable-set=":MapSDK:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":MapSDK:dokkaHtml/release" data-filterable-set=":MapSDK:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="icon-image.html"><span>icon</span><wbr></wbr><span><span>Image</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-380507408%2FProperties%2F1511875792"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":MapSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="icon-image.html">iconImage</a><span class="token operator">: </span><a href="../-igm-image/index.html">IgmImage</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Gets or sets marker icon image.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1904674273%2FProperties%2F1511875792" anchor-label="iconScale" id="1904674273%2FProperties%2F1511875792" data-filterable-set=":MapSDK:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":MapSDK:dokkaHtml/release" data-filterable-set=":MapSDK:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="icon-scale.html"><span>icon</span><wbr></wbr><span><span>Scale</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1904674273%2FProperties%2F1511875792"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":MapSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="icon-scale.html">iconScale</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Float///PointingToDeclaration/">Float</span></div><div class="brief "><p class="paragraph">Gets or sets marker icon scale factor.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="124938378%2FProperties%2F1511875792" anchor-label="infoWindow" id="124938378%2FProperties%2F1511875792" data-filterable-set=":MapSDK:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":MapSDK:dokkaHtml/release" data-filterable-set=":MapSDK:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="info-window.html"><span>info</span><wbr></wbr><span><span>Window</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="124938378%2FProperties%2F1511875792"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":MapSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="info-window.html">infoWindow</a><span class="token operator">: </span><a href="../-igm-info-window/index.html">IgmInfoWindow</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph"><a href="../-igm-info-window/index.html">IgmInfoWindow</a> currently displayed for this marker.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2023863724%2FProperties%2F1511875792" anchor-label="isIconFlat" id="2023863724%2FProperties%2F1511875792" data-filterable-set=":MapSDK:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":MapSDK:dokkaHtml/release" data-filterable-set=":MapSDK:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-icon-flat.html"><span>is</span><wbr></wbr><span>Icon</span><wbr></wbr><span><span>Flat</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2023863724%2FProperties%2F1511875792"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":MapSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="is-icon-flat.html">isIconFlat</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></div><div class="brief "><p class="paragraph">Gets or sets whether the marker icon is rendered flat on the map plane. The default value is <code class="lang-kotlin">false</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="408481227%2FProperties%2F1511875792" anchor-label="isTitleFlat" id="408481227%2FProperties%2F1511875792" data-filterable-set=":MapSDK:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":MapSDK:dokkaHtml/release" data-filterable-set=":MapSDK:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-title-flat.html"><span>is</span><wbr></wbr><span>Title</span><wbr></wbr><span><span>Flat</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="408481227%2FProperties%2F1511875792"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":MapSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="is-title-flat.html">isTitleFlat</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Boolean///PointingToDeclaration/">Boolean</span></div><div class="brief "><p class="paragraph">Gets or sets whether the marker title is rendered flat on the map plane. The default value is <code class="lang-kotlin">false</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1642846529%2FProperties%2F1511875792" anchor-label="position" id="-1642846529%2FProperties%2F1511875792" data-filterable-set=":MapSDK:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":MapSDK:dokkaHtml/release" data-filterable-set=":MapSDK:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="position.html"><span><span>position</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1642846529%2FProperties%2F1511875792"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":MapSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="position.html">position</a><span class="token operator">: </span><a href="../../com.inavi.global.mapsdk.geometry/-lat-lng/index.html">LatLng</a></div><div class="brief "><p class="paragraph">Gets or sets marker position.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1539775546%2FProperties%2F1511875792" anchor-label="title" id="1539775546%2FProperties%2F1511875792" data-filterable-set=":MapSDK:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":MapSDK:dokkaHtml/release" data-filterable-set=":MapSDK:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="title.html"><span><span>title</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1539775546%2FProperties%2F1511875792"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":MapSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="title.html">title</a><span class="token operator">: </span><span data-unresolved-link="kotlin/String///PointingToDeclaration/">String</span></div><div class="brief "><p class="paragraph">Gets or sets marker title text.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1007833981%2FProperties%2F1511875792" anchor-label="titleColor" id="1007833981%2FProperties%2F1511875792" data-filterable-set=":MapSDK:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":MapSDK:dokkaHtml/release" data-filterable-set=":MapSDK:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="title-color.html"><span>title</span><wbr></wbr><span><span>Color</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1007833981%2FProperties%2F1511875792"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":MapSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="title-color.html">titleColor</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span></div><div class="brief "><p class="paragraph">Gets or sets marker title text color. The default value is <a href="https://developer.android.com/reference/kotlin/android/graphics/Color.html#black">android.graphics.Color.BLACK</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1701579431%2FProperties%2F1511875792" anchor-label="titleHaloColor" id="-1701579431%2FProperties%2F1511875792" data-filterable-set=":MapSDK:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":MapSDK:dokkaHtml/release" data-filterable-set=":MapSDK:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="title-halo-color.html"><span>title</span><wbr></wbr><span>Halo</span><wbr></wbr><span><span>Color</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1701579431%2FProperties%2F1511875792"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":MapSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="title-halo-color.html">titleHaloColor</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span></div><div class="brief "><p class="paragraph">Gets or sets marker title halo color. The default value is <a href="https://developer.android.com/reference/kotlin/android/graphics/Color.html#white">android.graphics.Color.WHITE</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-814179220%2FProperties%2F1511875792" anchor-label="titleMargin" id="-814179220%2FProperties%2F1511875792" data-filterable-set=":MapSDK:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":MapSDK:dokkaHtml/release" data-filterable-set=":MapSDK:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="title-margin.html"><span>title</span><wbr></wbr><span><span>Margin</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-814179220%2FProperties%2F1511875792"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":MapSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="title-margin.html">titleMargin</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Float///PointingToDeclaration/">Float</span></div><div class="brief "><p class="paragraph">Gets or sets the margin between icon and title. The default value is <code class="lang-kotlin">0</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1365100904%2FProperties%2F1511875792" anchor-label="titleMaxWidth" id="-1365100904%2FProperties%2F1511875792" data-filterable-set=":MapSDK:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":MapSDK:dokkaHtml/release" data-filterable-set=":MapSDK:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="title-max-width.html"><span>title</span><wbr></wbr><span>Max</span><wbr></wbr><span><span>Width</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1365100904%2FProperties%2F1511875792"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":MapSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="title-max-width.html">titleMaxWidth</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Int///PointingToDeclaration/">Int</span></div><div class="brief "><p class="paragraph">Gets or sets the maximum width per line for marker title text.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1540392775%2FProperties%2F1511875792" anchor-label="titleSize" id="-1540392775%2FProperties%2F1511875792" data-filterable-set=":MapSDK:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":MapSDK:dokkaHtml/release" data-filterable-set=":MapSDK:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="title-size.html"><span>title</span><wbr></wbr><span><span>Size</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1540392775%2FProperties%2F1511875792"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":MapSDK:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="title-size.html">titleSize</a><span class="token operator">: </span><span data-unresolved-link="kotlin/Float///PointingToDeclaration/">Float</span></div><div class="brief "><p class="paragraph">Gets or sets marker title text size in dp. The default value is <code class="lang-kotlin">12</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2026 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
